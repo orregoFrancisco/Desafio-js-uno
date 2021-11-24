@@ -1,34 +1,47 @@
 // Flujo con operaciones 
 
-const operaciones = (num1,num2,num3) => {
-    let preguntaB = pregunta
-    if(preguntaB == 1){
-        let aplicar = num1 + num2 + num3;
-        console.log(aplicar);
+const operaciones = (num1,num2) => {
+    let preguntaB = true
+    if(preguntaB){
+        let aplicar = num1 + num2;
+        console.log(`numeros operados ${num1},${num2}`)
+        console.log("resultado suma "+aplicar);
+        alert(`El resultado de la suma es ${aplicar}`)
     }
-    if(preguntaB == 2){
-        let aplicar = num1 - num2 - num3;
-         console.log(aplicar);
+    if(preguntaB){
+        let aplicar = num1 - num2;
+        console.log(`numeros operados ${num1} y ${num2}`)
+         console.log("resultado resta "+ aplicar);
+         alert(`El resultado de la resta es ${aplicar}`)
     }
-    if(preguntaB == 3){
-        let aplicar = num1 * num2 * num3;
-         console.log(aplicar);
+    if(preguntaB){
+        let aplicar = num1 * num2;
+        console.log(`numeros operados ${num1},${num2}`)
+         console.log("resultado multiplicacion "+ aplicar);
+         alert(`El resultado de la multiplicacion es ${aplicar}`)
     }
-    if(preguntaB == 4){
-        let aplicar = num1 / num2 / num3;
-         console.log(aplicar);
+    if(preguntaB){
+        let aplicar = num1 / num2;
+        console.log(`numeros operados ${num1},${num2}`)
+         console.log("resultado division "+ aplicar);
+         alert(`El resultado de la division es ${aplicar}`)
     }
-    if(preguntaB == 5){
-        let aplicar = num1 % num2 % num3;
-         console.log(aplicar);
+    if(preguntaB){
+        let aplicar = num1 % num2;
+        console.log(`numeros operados ${num1},${num2}`)
+         console.log("resultado residuo "+ aplicar);
+         alert(`El resultado del residuo es ${aplicar}`)
     }
     
 };
 
-let pregunta = parseInt(prompt("Elige una operacion; 1-suma , 2-resta , 3-multiplicacion , 4-division , 5-residuo"));
-let indicacion = alert("Elegirías 3 numeros");
+
+let indicacion = alert("Elegirías 2 numeros");
 let A = parseInt(prompt("Elige un numero "));
 let B = parseInt(prompt("Elige un numero "));
-let C = parseInt(prompt("Elige un numero "));
+if(A == B || B==A || A < 0 || B < 0){ 
+    alert("Los numeros deben ser distintos y mayores a cero");
+}else{
+    operaciones(A,B);
+}
 
-operaciones(A,B,C);
