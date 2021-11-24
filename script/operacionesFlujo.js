@@ -4,7 +4,7 @@ const operaciones = (num1,num2) => {
     let preguntaB = true
     if(preguntaB){
         let aplicar = num1 + num2;
-        console.log(`numeros operados ${num1},${num2}`)
+        console.log(`numeros operados ${num1} y ${num2}`)
         console.log("resultado suma "+aplicar);
         alert(`El resultado de la suma es ${aplicar}`)
     }
@@ -16,19 +16,19 @@ const operaciones = (num1,num2) => {
     }
     if(preguntaB){
         let aplicar = num1 * num2;
-        console.log(`numeros operados ${num1},${num2}`)
+        console.log(`numeros operados ${num1} y ${num2}`)
          console.log("resultado multiplicacion "+ aplicar);
          alert(`El resultado de la multiplicacion es ${aplicar}`)
     }
     if(preguntaB){
         let aplicar = num1 / num2;
-        console.log(`numeros operados ${num1},${num2}`)
+        console.log(`numeros operados ${num1} y ${num2}`)
          console.log("resultado division "+ aplicar);
          alert(`El resultado de la division es ${aplicar}`)
     }
     if(preguntaB){
         let aplicar = num1 % num2;
-        console.log(`numeros operados ${num1},${num2}`)
+        console.log(`numeros operados ${num1} y ${num2}`)
          console.log("resultado residuo "+ aplicar);
          alert(`El resultado del residuo es ${aplicar}`)
     }
